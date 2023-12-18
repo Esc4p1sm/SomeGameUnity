@@ -7,7 +7,6 @@ using UnityEngine.Events;
 [RequireComponent(typeof(SpriteRenderer))]
 public class SpriteAnimation : MonoBehaviour
 {
-   
     [SerializeField] private int _frameRate;
     [SerializeField] private bool _loop;
     [SerializeField] private Sprite[] _sprites;
@@ -23,7 +22,6 @@ public class SpriteAnimation : MonoBehaviour
     private void Start()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
-       
     }
 
     private void OnEnable()

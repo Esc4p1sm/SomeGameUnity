@@ -37,8 +37,6 @@ public class Hero : MonoBehaviour
         _animator = GetComponent<Animator>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
         
-        
-
     }
 
     /// <summary>
@@ -55,8 +53,8 @@ public class Hero : MonoBehaviour
         PlayerMovement();
         //Вызов анимации
         Animation();
-
     }
+
     /// <summary>
     /// Проверка условия, что персонаж находится на земле
     /// </summary>
@@ -65,7 +63,6 @@ public class Hero : MonoBehaviour
     {
         RaycastHit2D hit = Physics2D.CircleCast(transform.position + _groundCheckPosition, _groundCheckRadius, Vector2.down, 0, _groundLayer);
         return hit.collider != null;
-
     }
     /// <summary>
     /// Отрисовка видимой сферы для редактирования условия нахождения на земле

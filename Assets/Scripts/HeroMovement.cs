@@ -8,12 +8,11 @@ using UnityEngine.InputSystem;
 public class HeroMovement : MonoBehaviour
 {
     [SerializeField] private Hero _hero;
+
     HeroInput _heroInput;
     
-
-
     /// <summary>
-    ///  Связывание inputPlayer с методами 
+    ///  Связывание inputPlayer с событиями
     /// </summary>
     private void Awake()
     {
